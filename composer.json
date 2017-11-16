@@ -1,0 +1,31 @@
+{
+    "name": "haiaouang/alipush",
+    "description": "The Hht alipush package.",
+    "license": "MIT",
+    "homepage": "https://github.com/haiaouang/alipush",
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/haiaouang/alipush",
+        "source": "https://github.com/haiaouang/alipush"
+    },
+    "authors": [
+        {
+            "name": "HaitaoHuang",
+            "email": "h280338871@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+	"haiaouang/support": "^1.0.0",
+	"haiaouang/pusher": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hht\\AliPush\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
