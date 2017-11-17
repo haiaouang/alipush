@@ -78,19 +78,19 @@ class PusherAdapter implements AdapterInterface
 		{
 			case 'device':
 				$fields['Target'] = 'DEVICE';
-				$fields['TargetValue'] = is_array($this->value) ? implode(',', $this->value) : $this->value;
+				$fields['TargetValue'] = urlencode(is_array($this->value) ? implode(',', $this->value) : $this->value);
 				break;
 			case 'account':
 				$fields['Target'] = 'ACCOUNT';
-				$fields['TargetValue'] = is_array($this->value) ? implode(',', $this->value) : $this->value;
+				$fields['TargetValue'] = urlencode(is_array($this->value) ? implode(',', $this->value) : $this->value);
 				break;
 			case 'alias':
 				$fields['Target'] = 'ALIAS';
-				$fields['TargetValue'] = $this->client->getPrefix() . (is_array($this->value) ? (implode(',' . $this->client->getPrefix(), $this->value)) : $this->value);
+				$fields['TargetValue'] = urlencode($this->client->getPrefix() . (is_array($this->value) ? (implode(',' . $this->client->getPrefix(), $this->value)) : $this->value));
 				break;
 			case 'tag':
 				$fields['Target'] = 'TAG';
-				$fields['TargetValue'] = is_array($this->value) ? implode(',', $this->value) : $this->value;
+				$fields['TargetValue'] = urlencode(is_array($this->value) ? implode(',', $this->value) : $this->value);
 				break;
 			case 'all':
 				$fields['Target'] = 'ALL';
