@@ -106,7 +106,7 @@ class PusherAdapter implements AdapterInterface
 				$fields['DeviceType'] = 'iOS';
 				$fields['AppKey'] = $this->client->getIOSConfig()->app_key;
 				break;
-			case 'andriod':
+			case 'android':
 				$fields['DeviceType'] = 'ANDROID';
 				$fields['AppKey'] = $this->client->getAndroidConfig()->app_key;
 				break;
