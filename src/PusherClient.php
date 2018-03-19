@@ -194,7 +194,7 @@ class PusherClient
 			$str .= "{$key}={$val}&";
 		}
 
-		return substr($str, 0, count($str) - 2);
+		return substr($str, 0, strlen($str) - 2);
 	}
 	
 }
